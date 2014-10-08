@@ -125,7 +125,7 @@
 
             var classType = el.data('type') !== undefined ? el.data('type') : el.attr('type');
 
-            var label = null,
+            /**var label = null,
                 elLabelId = el.attr('id');
 
             if (elLabelId !== undefined) {
@@ -146,7 +146,7 @@
 
                 this.options.label = label;
 
-            }
+            }*/
 
             label = el.data('label') !== undefined ? el.data('label') : this.options.label;
 
