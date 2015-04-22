@@ -49,6 +49,9 @@
         }
 
         element.find('a:first, label').on('touchstart click', function(e){
+           if ($(e.target).is('a') && $(e.target).attr('href') != '#') {
+                return;
+            }
 
             e.preventDefault();
 
